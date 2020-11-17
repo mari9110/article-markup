@@ -1,8 +1,138 @@
-/* Тут пиши основные стили */
+body{
+    width: 100%;
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+h1, h2{
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+}
 
 
-@media (max-width: 800px) {
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header-logo{
+    margin-left: 38px;
+    margin-top: 10px;
+}
+
+nav{
+    width: 100%;
+    background: #f8f8f8;
+    border-top: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+}
+
+.nav-list > li{
+    font-size:24px;
+    color:#333333;
+    text-align:left;
+    line-height:36px;
+    list-style: none;
+    display: inline-block;
+    margin-right:30px;
+}
+
+.nav-list > li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav-list > li:nth-child(4) > a{
+    font-size:24px;
+    color:#d0021b;
+    text-align:left;
+    line-height:36px;
+
+}
+
+.js-article{
+    width: 700px;
+    margin: auto;
+}
+
+.js-article > p{
+    font-size:21px;
+    color:rgba(0,0,0,0.84);
+    text-align:left;
+    line-height:33px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.js-article > h1{
+    font-size:42px;
+    color:rgba(0,0,0,0.84);
+    text-align:left;
+    line-height:44px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.js-article > h2{
+    font-size:34px;
+    color:rgba(0,0,0,0.84);
+    text-align:left;
+    line-height:39px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.js-article > img {
+    width: 700px;
+}
+
+.code-fragment{
+    font-family: "Courier New", monospace;
+    font-weight: 100;
+    background: #eeeeee;
+    color: #41433b;
+}
+
 /* Тут пиши стили для мобилки.
     Стили применятся только когда страничка будет ≤800px шириной
  */
+@media (max-width: 800px) {
+	.header-logo {
+        width: 101px;
+        height: 64px;
+        margin-left: 20px;
+    }
+
+	.nav-list > li {
+        display: block;
+		margin-bottom: 10px;
+    }
+
+	.js-article {
+		width: calc(100% - 40px);
+        padding-top: 20px;
+    }
+
+	.js-article > h1{
+        font-size: 26px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+
+	.js-article > h2 {
+        font-size: 22px;
+        line-height: 39px;
+        margin-top: 25px;
+        margin-bottom: 6px;
+    }
+
+	.js-article > p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+	.js-article > img {
+        max-width: 520px;
+        margin: 25px auto;
+        object-fit: contain;
+    }
 }
